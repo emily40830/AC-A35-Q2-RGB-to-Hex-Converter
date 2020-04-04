@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RGB to Hex Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="RGB">
+      <div class="color">
+        <h3 id="redLabel">R</h3>
+        <input type="range" id="R-value" name="R" min="0" max="255" value="100" step="1"
+          onmousemove="document.getElementById('R-text').innerHTML=this.value; convert()">
+        <h3 id="R-text" class="value">100</h3>
+      </div>
+      <div class="color">
+        <h3 id="greenLabel">G</h3>
+        <input type="range" id="G-value" name="R" min="0" max="255" value="100" step="1"
+          onmousemove="document.getElementById('G-text').innerHTML=this.value; convert()">
+        <h3 id="G-text" class="value">100</h3>
+      </div>
+      <div class="color">
+        <h3 id="blueLabel">B</h3>
+        <input type="range" id="B-value" name="R" min="0" max="255" value="100" step="1"
+          onmousemove="document.getElementById('B-text').innerHTML=this.value; convert()">
+        <h3 id="B-text" class="value">100</h3>
+      </div>
+    </div>
+    <div id="Hex">
+      <h2>#646464</h2>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
